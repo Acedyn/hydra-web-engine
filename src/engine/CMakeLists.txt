@@ -4,5 +4,5 @@ add_executable(hydra-engine
 
 if(EMSCRIPTEN)
     target_include_directories(hydra-engine
-        PUBLIC ${EMSCRIPTEN_ROOT_PATH}/system/include)
+        PUBLIC ${EMSCRIPTEN_ROOT_PATH}/cache/sysroot/include)
 endif()

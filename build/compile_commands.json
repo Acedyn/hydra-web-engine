@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/Project/hydra-engine/build",
-  "command": "D:\\Program\\emsdk\\upstream\\emscripten\\em++.bat -ID:/Program/emsdk/upstream/emscripten/system/include  -s MODULARIZE=1 -s EXPORTED_RUNTIME_METHODS=ccall, USE_WEBGPU=1 NO_EXIT_RUNTIME=1 -o engine\\CMakeFiles\\hydra-engine.dir\\main.cpp.o -c D:\\Project\\hydra-engine\\src\\engine\\main.cpp",
-  "file": "D:\\Project\\hydra-engine\\src\\engine\\main.cpp"
-}
-]

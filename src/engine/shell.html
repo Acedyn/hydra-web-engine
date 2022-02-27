@@ -15,8 +15,6 @@
 
     <script type='text/javascript'>
       var Module = {
-        preRun: [],
-        postRun: [],
         print: (function() {
           return (text) => {console.log(text);
           };
@@ -25,6 +23,13 @@
           return document.getElementById('canvas');
         })(),
       };
+
+      getDevice = async () => {
+        adatper = await navigator.gpu.requestAdapter();
+        device = await adatper.requestDevice();
+        Module.preinitializedWebGPUDevice = device;
+      }
+      getDevice();
     </script>
     {{{ SCRIPT }}}
   </body>

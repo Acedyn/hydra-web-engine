@@ -9,7 +9,7 @@ project(Hydra-Engine
     LANGUAGES CXX
     DESCRIPTION "Hydra delegate engine running on WebGPU")
 
-set(EMSCRIPTEN_COMPILE_FLAGS "--shell-file ${CMAKE_CURRENT_LIST_DIR}/engine/shell.html")
+set(EMSCRIPTEN_COMPILE_FLAGS "--shell-file ${CMAKE_CURRENT_LIST_DIR}/engine/shell.html -s USE_WEBGPU=1")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EMSCRIPTEN_COMPILE_FLAGS}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EMSCRIPTEN_COMPILE_FLAGS}")
 set(CMAKE_EXECUTABLE_SUFFIX ".html")

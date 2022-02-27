@@ -2,6 +2,7 @@
 #include "emscripten.h"
 #include <stdio.h>
 #include <SDL/SDL.h>
+#include "webgpu/webgpu.h"
 
 extern "C" {
     int main(int argc, char *argv[])
